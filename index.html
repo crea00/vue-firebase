@@ -8,14 +8,6 @@
   <title>Vue Basics</title>
   <!-- development version, includes helpful console warnings -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <style>
-    .canvas {
-      width: 300px;
-      height: 300px;
-      margin-top: 20px;
-      background: #ddd;
-    }
-  </style>
 </head>
 
 <body>
@@ -23,11 +15,9 @@
   <h1>Vue Basics</h1>
   <div id="app">
     <h2>{{ title }}</h2>
-    <button @click="logEvent">Log Event Info</button>
-    <div class="canvas" @mousemove="logCoords">
-      {{ coords.x}}, 
-      {{coords.y }}
-    </div>
+    <p>My Name is {{ name }}</p>
+    <input type="text" @keyup="updateName">
+    <input type="text" @keypress="updateName">
   </div>
 
   <script src="app.js"></script>
