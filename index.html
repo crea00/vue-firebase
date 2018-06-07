@@ -8,6 +8,14 @@
   <title>Vue Basics</title>
   <!-- development version, includes helpful console warnings -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    .canvas {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+      background: #ddd;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,11 +23,11 @@
   <h1>Vue Basics</h1>
   <div id="app">
     <h2>{{ title }}</h2>
-    <p>I earn {{ wage }} pounds per hour </p>
-    <button v-on:click="changeWage(1)">Increase wage by £1</button>
-    <button v-on:click="changeWage(-1)">Decrease wage by £1</button>
-    <button v-on:dblclick="changeWage(5)">Increase wage by £1</button>
-    <button v-on:dblclick="changeWage(-5)">Decrease wage by £1</button>
+    <button @click="logEvent">Log Event Info</button>
+    <div class="canvas" @mousemove="logCoords">
+      {{ coords.x}}, 
+      {{coords.y }}
+    </div>
   </div>
 
   <script src="app.js"></script>
