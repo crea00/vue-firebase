@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <!-- When we request a certain page, this is where that component is loaded in. For example when we request 'HelloWorld', then it's going to get loaded in right here -->
+    <!-- 
+      <router-view/>
+      When we request a certain page, this is where that component is loaded in. For example when we request 'HelloWorld', then it's going to get loaded in right here 
+      -->
     <router-view/>
   </div>
 </template>
