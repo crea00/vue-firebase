@@ -20,6 +20,7 @@ export default {
   data () {
     return {
       smoothies: [
+        // Slug is a url friendly version of title
         { title: 'Ninja Brew', slug: 'ninja-brew', ingredients: ['bananas', 'coffee', 'milk'], id: '1' },
         { title: 'Morning Mood', slug: 'morning-mood', ingredients: ['mango', 'lime', 'juice'], id: '2' }
       ]
