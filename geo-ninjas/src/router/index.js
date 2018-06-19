@@ -19,7 +19,8 @@ const router = new Router({
     },
     {
     	path: '/signup',
-    	name: 'Signup'
+      name: 'Signup',
+      component: Signup
     },
     {
       path: '/login',
